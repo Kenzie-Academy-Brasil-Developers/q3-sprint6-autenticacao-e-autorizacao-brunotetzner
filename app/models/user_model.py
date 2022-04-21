@@ -18,7 +18,6 @@ class UserModel(db.Model):
     last_name = db.Column(db.String(511), nullable=True)
     email = db.Column(db.String(80), nullable=True, unique=True)
     password_hash = db.Column(db.String(511), nullable=True)
-    api_key = db.Column(db.String(511), nullable=True)
 
     @property
     def password(self):
